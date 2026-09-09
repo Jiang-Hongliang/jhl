@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Associate Professor, <a href='https://www.simis.cn/'>SIMIS</a> and <a href='https://www.fudan.edu.cn/'>Fudan University</a>.
 
@@ -8,13 +8,10 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  # TODO: add your office number and email below once you want them public
-  more_info: >
-    <p>Shanghai Institute for Mathematics and Interdisciplinary Sciences</p>
-    <p>Shanghai, China</p>
+  more_info: # left empty on purpose: no address block under the photo
 
 selected_papers: false # flip back to true once _bibliography/papers.bib holds your own papers
-social: true # includes social icons at the bottom of the page
+social: false # no social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -33,3 +30,11 @@ and Interdisciplinary Sciences (SIMIS) and Fudan University.
 My research interests include supersymmetric quantum field theory,
 conformal field theory, vertex operator algebras, topological quantum
 field theory, generalized symmetry, holography, and mathematical physics.
+
+<!-- markdown="0" plus one line per link: kramdown mangles inline HTML that is
+     split across lines and leaks a stray closing tag. Styling lives in the
+     .affiliations rules in _includes/footer.liquid. -->
+<div class="affiliations" markdown="0">
+<a href="https://www.simis.cn/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/simis_logo.png' | relative_url }}" alt="" loading="lazy"><span>SIMIS</span></a>
+<a href="https://www.fudan.edu.cn/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/fudan_logo.png' | relative_url }}" alt="" loading="lazy"><span>Fudan University</span></a>
+</div>
